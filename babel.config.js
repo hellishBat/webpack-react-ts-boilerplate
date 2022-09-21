@@ -16,6 +16,7 @@ module.exports = (api) => {
       ],
       '@babel/plugin-proposal-class-properties',
       'babel-plugin-styled-components',
+      'polished',
     ],
   }
 }

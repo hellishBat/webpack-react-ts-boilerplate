@@ -4,6 +4,7 @@ import Layout from '@/layouts/Layout'
 import LogoWebpack from '@/assets/images/svg/webpack.svg'
 import LogoReact from '@/assets/images/svg/react.svg'
 import LogoStyledComp from '@/assets/images/svg/styled.svg'
+import LogoPolished from '@/assets/images/svg/polished.svg'
 import LogoTS from '@/assets/images/svg/ts.svg'
 import Container from '@/components/Container'
 import { inlineFlexAlignCenter } from '@/styles'
@@ -31,9 +32,11 @@ const Home = () => {
               <span
                 css={`
                   ${inlineFlexAlignCenter} gap: 0.3em;
+                  flex-wrap: wrap;
                 `}
               >
-                <LogoReact /> React <LogoTS /> TypeScript +<LogoStyledComp /> Styled Components
+                <LogoReact /> React <LogoTS /> TypeScript +<LogoStyledComp /> Styled Components +{' '}
+                <LogoPolished /> Polished
               </span>
             </h2>
           </div>

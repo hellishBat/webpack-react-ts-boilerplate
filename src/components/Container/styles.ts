@@ -1,34 +1,34 @@
 // Container Styles
-import Styled from 'styled-components'
-import { media } from '@/utils'
+import styled from 'styled-components'
+import { media } from '@/styles/media'
 import { mxWidth } from '@/constants'
 
-export const StyledContainer = Styled.div`
+export const StyledContainer = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
 
-  ${media.xs`
+  ${media.xs} {
     max-width: ${mxWidth.xs};
-  `}
- 
-  ${media.sm`
+  }
+
+  ${media.sm} {
     max-width: ${mxWidth.sm};
-  `}
+  }
 
-  ${media.md`
+  ${media.md} {
     max-width: ${mxWidth.md};
-  `}
+  }
 
-  ${media.lg`
+  ${media.lg} {
     max-width: ${mxWidth.lg};
-  `}
+  }
 
-  ${media.xl`
+  ${media.xl} {
     max-width: ${mxWidth.xl};
-  `}
+  }
 
-  ${media.xxl`
+  ${media.xxl} {
     max-width: ${mxWidth.xxl};
-  `}
+  }
 `

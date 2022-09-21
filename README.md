@@ -6,7 +6,7 @@ React TS starter template with the most relevant tools and best development prac
 
 - ⚛️ Supports React + TypeScript
 - 🔥 React Refresh (HMR) (**Dev mode**)
-- 🖌️ Supports styling with Styled Components (CSS-in-JS)
+- 🖌️ Supports styling with Styled Components and Polished (CSS-in-JS)
 - 🔍 Source-maps for CSS and JS files (**Dev mode**)
 - 🗜️ Minification of HTML/CSS/JS files (**Prod mode**)
 - 🖼 Optimization of images with Squoosh (**Prod mode**)

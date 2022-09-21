@@ -1,7 +1,6 @@
 // Constants
-import { BreakpointsTypes } from '@/types'
 
-const breakpoints: BreakpointsTypes = {
+const breakpoints = {
   xs: 480,
   sm: 576,
   md: 768,
@@ -10,7 +9,7 @@ const breakpoints: BreakpointsTypes = {
   xxl: 1400,
 }
 
-const mxWidth: Record<string, string> = {
+const mxWidth = {
   xs: 'auto',
   sm: '540px',
   md: '720px',

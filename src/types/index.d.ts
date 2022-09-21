@@ -3,11 +3,11 @@
 import { ReactNode } from 'react'
 import { CSSObject, SimpleInterpolation, FlattenSimpleInterpolation } from 'styled-components'
 
-export type ChildrenTypes = {
+type ChildrenTypes = {
   children: ReactNode | ReactNode[]
 }
 
-export type BreakpointsTypes = {
+type BreakpointTypes = {
   xs: number
   sm: number
   md: number
@@ -16,12 +16,9 @@ export type BreakpointsTypes = {
   xxl: number
 }
 
-export type BreakpointEntryTypes = [
-  keyof BreakpointsTypes,
-  BreakpointsTypes[keyof BreakpointsTypes]
-]
+type BreakpointEntryTypes = [keyof BreakpointTypes, BreakpointTypes[keyof BreakpointTypes]]
 
-export type Interpolation<T> = {
+type InterpolationTypes<T> = {
   [key in keyof T]:
     | ((
         first: CSSObject | TemplateStringsArray,
@@ -30,6 +27,8 @@ export type Interpolation<T> = {
     | (() => string)
 }
 
-export interface ICustomObject extends ObjectConstructor {
-  entries<K extends keyof BreakpointsTypes, T>(o: { [s in K]: T } | ArrayLike<T>): [K, T][]
+interface ICustomObject extends ObjectConstructor {
+  entries<K extends keyof BreakpointTypes, T>(o: { [s in K]: T } | ArrayLike<T>): [K, T][]
 }
+
+export { ChildrenTypes, BreakpointTypes, BreakpointEntryTypes, InterpolationTypes, ICustomObject }
