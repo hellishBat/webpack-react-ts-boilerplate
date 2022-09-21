@@ -1,7 +1,7 @@
 // Global Styles
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'Inter';
   font-display: swap;
@@ -32,7 +32,8 @@ body {
 body {
   font-size: 1rem;
   line-height: 1.4;
-  background-image: linear-gradient(to left top, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text}
 }
 
 #root {
@@ -74,6 +75,7 @@ a {
 button {
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 svg {
@@ -86,4 +88,4 @@ svg {
 }
 `
 
-export default GlobalStyle
+export default GlobalStyles

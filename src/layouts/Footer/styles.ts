@@ -3,6 +3,6 @@ import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
   padding: 2rem 0;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.secondary};
 `
 export { StyledFooter }

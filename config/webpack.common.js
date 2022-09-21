@@ -63,7 +63,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.sass', '.scss', '.css'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     plugins: [new TsconfigPathsPlugin()],
   },
 }

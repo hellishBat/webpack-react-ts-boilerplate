@@ -1,9 +1,10 @@
 // ContextProviders
 import { FC } from 'react'
-import { ChildrenTypes } from '@/types'
+import AppThemeProvider from './ThemeContext'
+import type { ChildrenTypes } from '@/types'
 
 const ContextProviders: FC<ChildrenTypes> = ({ children }) => {
-  return <>{children}</>
+  return <AppThemeProvider>{children}</AppThemeProvider>
 }
 
 export default ContextProviders

@@ -1,12 +1,12 @@
 // App
-import GlobalStyle from '@/styles/global'
+import GlobalStyles from '@/styles/global'
 import 'reseter.css'
 import Home from '@/pages/Home'
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <Home />
     </>
   )
