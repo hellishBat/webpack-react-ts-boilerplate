@@ -32,7 +32,7 @@ body {
 body {
   font-size: 1rem;
   line-height: 1.4;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.text}
 }
 

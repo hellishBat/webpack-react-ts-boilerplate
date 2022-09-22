@@ -15,8 +15,9 @@ export interface ThemeContext {
 
 export interface Theme {
   colors: {
-    background: string
+    primary: string
     secondary: string
+    accent: string
     text: string
   }
 }

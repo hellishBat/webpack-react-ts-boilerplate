@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Container from '@/components/Container'
 import { useThemeContext } from '@/context/ThemeContext'
-import { StyledHeader } from './styles'
+import { StyledHeader, StyledButton } from './styles'
 import { Mode } from '@/types/theme'
 
 const Header = () => {
@@ -42,17 +42,7 @@ const Header = () => {
           `}
         >
           <a href="/">Link</a>
-          <button
-            onClick={toggleMode}
-            css={`
-              padding: 0.5em 1em;
-              background-color: #93c5fd;
-              border-radius: 0.25em;
-              font-weight: bold;
-            `}
-          >
-            Light/Dark Mode
-          </button>
+          <StyledButton onClick={toggleMode}>Light/Dark Mode</StyledButton>
         </div>
       </Container>
     </StyledHeader>
