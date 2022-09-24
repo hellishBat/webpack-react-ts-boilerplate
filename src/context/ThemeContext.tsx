@@ -1,5 +1,5 @@
 // ThemeContext
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { LightTheme, DarkTheme } from '@/themes'
 import GlobalStyles from '@/styles/global'
@@ -20,7 +20,14 @@ export const AppThemeProvider = ({ children }: ThemeProviderProps) => {
   const changeMode = (mode: Mode) => {
     setTheme(mode === Mode.Light ? LightTheme : DarkTheme)
     setMode(mode)
+    window.localStorage.setItem('theme', mode)
+    console.log(window.localStorage.getItem('theme'))
   }
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('theme')
+    localTheme && changeMode(localTheme)
+  }, [theme])
 
   return (
     <AppThemeContext.Provider value={{ mode, changeMode }}>
