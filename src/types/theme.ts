@@ -21,3 +21,8 @@ export interface Theme {
     text: string
   }
 }
+
+export type ThemeSwitchTypes = {
+  clickHandler: (fn: any) => void
+  mode: string
+}

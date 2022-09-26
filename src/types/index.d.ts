@@ -5,3 +5,7 @@ import { ReactNode } from 'react'
 export type ChildrenTypes = {
   children: ReactNode | ReactNode[]
 }
+
+export type ClickHandlerType = {
+  clickHandler: (fn: any) => void
+}

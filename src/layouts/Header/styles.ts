@@ -6,11 +6,4 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.secondary};
 `
 
-const StyledButton = styled.button`
-  padding: 0.5em 1em;
-  background-color: ${({ theme }) => theme.colors.accent};
-  border-radius: 0.25em;
-  font-weight: bold;
-  color: #fff;
-`
-export { StyledHeader, StyledButton }
+export { StyledHeader }

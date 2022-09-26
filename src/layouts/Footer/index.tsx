@@ -2,7 +2,7 @@
 import Container from '@/components/Container'
 import { flexJustifyCenter } from '@/styles'
 import { StyledFooter } from './styles'
-import IconHeart from '@/assets/images/svg/heart.svg'
+import { IconHeart } from '@/assets'
 
 const Footer = () => {
   return (

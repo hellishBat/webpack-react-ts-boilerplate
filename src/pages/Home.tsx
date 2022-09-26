@@ -1,13 +1,9 @@
 // Home
 import ContextProviders from '@/context/ContextProviders'
 import Layout from '@/layouts/Layout'
-import LogoWebpack from '@/assets/images/svg/webpack.svg'
-import LogoReact from '@/assets/images/svg/react.svg'
-import LogoStyledComp from '@/assets/images/svg/styled.svg'
-import LogoPolished from '@/assets/images/svg/polished.svg'
-import LogoTS from '@/assets/images/svg/ts.svg'
 import Container from '@/components/Container'
 import { inlineFlexAlignCenter } from '@/styles'
+import { LogoWebpack, LogoReact, LogoTS, LogoStyledComp, LogoPolished } from '@/assets'
 
 const Home = () => {
   return (

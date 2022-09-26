@@ -1,8 +1,9 @@
 // Header
 import { useEffect, useState, useRef } from 'react'
-import Container from '@/components/Container'
 import { useThemeContext } from '@/context/ThemeContext'
-import { StyledHeader, StyledButton } from './styles'
+import Container from '@/components/Container'
+import ThemeSwitch from '@/components/ThemeSwitch'
+import { StyledHeader } from './styles'
 import { Mode } from '@/types/theme'
 
 const Header = () => {
@@ -42,7 +43,7 @@ const Header = () => {
           `}
         >
           <a href="/">Link</a>
-          <StyledButton onClick={toggleMode}>Light/Dark Mode</StyledButton>
+          <ThemeSwitch clickHandler={toggleMode} mode={mode} />
         </div>
       </Container>
     </StyledHeader>

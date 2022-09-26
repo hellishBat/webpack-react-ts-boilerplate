@@ -17,7 +17,7 @@ export const AppThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<Theme>(LightTheme)
   const [mode, setMode] = useState<Mode>(Mode.Light)
 
-  const changeMode = (mode: Mode) => {
+  const changeMode = (mode: Mode | any) => {
     setTheme(mode === Mode.Light ? LightTheme : DarkTheme)
     setMode(mode)
     window.localStorage.setItem('theme', mode)
